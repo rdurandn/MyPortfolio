@@ -11,6 +11,7 @@
     <meta name="description" content="Web desarrollada para compartir información sobre mi, mis pasiones y más">
     <meta name="keywords" content="blog, programación web, web personal, mi portafolio, res">
     <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -27,7 +28,7 @@
                 <li><a href="#SobreMi" class="link">Sobre Mi</a></li>
                 <li><a href="#sec-2" class="link">Mis Proyectos</a></li>
                 <li><a href="#sec-3" class="link">Mi experiencia</a></li>
-                <li><a href="Contact.html" class="link">Contáctame</a></li>
+                <li><a href="#contact" class="link">Contáctame</a></li>
                 <input type="checkbox" id="check">
                 <label for="check" class="bar-btn">
                     <i class="fa-sharp fa-solid fa-bars"></i>
@@ -62,10 +63,11 @@
             <div class="container-img1">
                 <img src="./imgs/icon_support.svg" alt="icono " class="icon_block_1">
                 <h2>Soporte TI</h2>
-                <p>Conocer de Soporte de TI, redes y software</p>
+                <p>Conocedor de Soporte de TI</p>
                 <ul>
                     <li>Service Desktop</li>
                     <li>Cableado de redes</li>
+                    <li>Office Avanzado</li>
                     <li></li>
                 </ul>
             </div>
@@ -76,26 +78,79 @@
                 <ul>
                     <li>Html</li>
                     <li>CSS</li>
-                    <li>Python</li>
-                    <li>Javascript</li>
+                    <li>Bootstrap</li>
                 </ul>
             </div>
             <div class="container-img3">
                 <img src="./imgs/icon_linux.svg" alt="img de bloque 3" class="img_block_3"">
                 <h2>S.O Linux</h2>
-                <p>Conocedor del Sistema Operativo linux, seguimos aprendiendo para dar soporte a nivel
-                    de administradors
+                <p>Conocedor del Sistema Operativo linux y seguimos aprendiendo para tener un conocimiento avanzado del mismo
                 </p>
                 <ul>
                     <li>Comandos</li>
+                    <li>BashScripting</li>
                 </ul>
             </div>
         </div>    
     </section>
+    <hr>
+    <aside>
+        <div class="form-contact" id="contact">
+            <div>
+                <h2 class="text-form-contact">Contáctame</h2>
+            </div>
+            
+            <form class="form">
+                <div class="form-inputs">
+                    <input class="form-type" type="text" placeholder="Tu Nombre" required >
+                    <input class="form-type" type="tel" placeholder="tu telefono" required>
+                    <input class="form-type" type="mail" placeholder="Tu email" required>
+                </div>
+                <div class="text-area">
+                    <textarea cols="37" rows="10"
+                    placeholder="Déjame tu opinión"
+                    ></textarea>  
+                </div>
+                <div class="class-button">
+                    <button>Enviar</button>
+                </div>
+                
+            </form>
+        </div>
+
+    </aside>
 </body>
-<footer>copyright
-    <div>
-        <img src="./imgs/icon_web.svg" alt="icon_w" class="icon_web">
-    </div>
- </footer>
+<!-- El footer está elaborado en Bootstrap -->
+<footer>
+    <div class="container my-5">
+
+        <footer class="text-center text-lg-start" style="background-color: rgb(24,26,28)">
+          <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+              <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+              <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"> RDurand</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
+      </div>
+      <!-- End of .container -->
+</footer>
+
+
 </html>
